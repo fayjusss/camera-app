@@ -1,14 +1,19 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Camera App
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-card>
+    <ion-card-content>
+      <img [src]="base64Image" />
+    </ion-card-content>
+  </ion-card>
+  <div id="buttons">
+    <button (click)="onTakePhoto()" ion-button round outline>Take a Photo</button>
+    <button (click)="onGallery()" ion-button round outline>Gallery</button>
+  </div>
 </ion-content>
