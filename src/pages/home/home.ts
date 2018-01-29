@@ -20,10 +20,7 @@ export class HomePage {
         encodingType: this.camera.EncodingType.JPEG,
         mediaType: this.camera.MediaType.PICTURE,
         saveToPhotoAlbum: true
-  //      targetWidth: 1000,
-  //      targetHeight: 1000
     }).then((imageData) => {
-      // imageData is a base64 encoded string
         this.base64Image = "data:image/jpeg;base64," + imageData;
     }, (err) => {
         console.log(err);
@@ -36,10 +33,7 @@ export class HomePage {
         destinationType: this.camera.DestinationType.DATA_URL,
         encodingType: this.camera.EncodingType.JPEG,
         mediaType: this.camera.MediaType.PICTURE,
-  //      targetWidth: 1000,
-  //      targetHeight: 1000
     }).then((imageData) => {
-      // imageData is a base64 encoded string
         this.base64Image = "data:image/jpeg;base64," + imageData;
     }, (err) => {
         console.log(err);
